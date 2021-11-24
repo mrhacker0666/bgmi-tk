@@ -1,0 +1,50 @@
+(function () {var it_id=1597731;var html="<div id=\"CPABUILD_MODAL\">\r\n    <div id=\"CPABUILDMODALCONTENT\">\r\n        <div id=\"CPABUILDMODALHEADER\">\r\n            <div id=\"CPABUILDMODALTITLE\"><\/div> <\/div>\r\n        <div id=\"CPABUILDMODALBODY\">\r\n            <iframe id=\"CPABUILDOFFERS\" style=\"overflow:hidden;\" src=\"\"><\/iframe>\r\n        <\/div>\r\n        <div id=\"CPABUILDMODALFOOTER\">\r\n            <p id=\"CPABUILDMODALFOOTERTEXT\"><\/p>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n";var css="\/content_lockers\/CustomButton\/css.css";var cssDIR="CustomButton";var defaultSettings={"%button_color_1%":{"title":"Button Color 1","default":"#378bdc","type":"color","small":"Buttons will use top to bottom gradient."},"%button_color_2%":{"title":"Button Color 2","default":"#1c66bd","type":"color","small":"Buttons will use top to bottom gradient."},"%main_button_text%":{"title":"Main Button Text","default":"Verify","type":"text"},"%main_button_icon%":{"title":"Main Button Icon","default":"lock","type":"icon"},"%main_button_font_size%":{"title":"Main Button Font Size","default":"25","type":"number"},"%input_css%":{"title":"Custom CSS","default":"a.offer-text {\r\n\tfont-size: 16px;\r\n}","type":"html_css","small":"CSS Only. No HTML or JS. Edit with caution.","custom_filter":true},"%html_overall%":{"title":"HTML Template","default":"<div class='center1'><div class='center2'><div class='center3'>\r\n\t<div id='step1-wrapper'>\r\n\t\t<button type='button' class='btn btn-large continue-button gradient responsive-width' id='continue-button'><i class='fa fa-%main_button_icon%'><\/i> Verify<\/button>\r\n\t<\/div>\r\n\t<div id='step2-wrapper' style='display: none;'>\r\n\t\t%offers%\r\n\t<\/div>\r\n<\/div><\/div><\/div>","type":"html","small":"Overall HTML Template. Edit with caution.","custom_filter":true},"%html_offer%":{"title":"Offer HTML","default":"<div class='offer-wrapper'><a class='btn offer-btn offer-text gradient responsive-width strike-tooltip' target='_blank' rel='noreferrer' href='{offer_link}' title='%offer_conversion%'>%offer_anchor%<\/a><\/div>","type":"html","small":"Individual Offer HTML. Edit with caution.","custom_filter":true},"overlay_color":{"title":"BG Overlay Color","default":"#000000","type":"color","small":"Background color of overlay (not used in iframe mode)."},"overlay_opacity":{"title":"Overlay Opacity","default":"0.4","type":"text","small":"Overlay Opacity (0 for transparent, 1 for opaque)"},"number_offers":{"title":"Number of Offers","default":4,"type":"number","small":"Max of 5 offers."},"number_offers_required":{"title":"Offers Required","default":1,"type":"number","small":"Offers required for unlock."},"payout_required":{"title":"Payout Required (Cents)","default":1,"type":"number","small":"Payout required (in cents). 500 = $5.00"},"animation":{"title":"Entrance Animation","default":"CPABUILD_fadeIn","type":"select","options":{"Drop From Top":"CPABUILD_animateTop","Fade In":"CPABUILD_fadeIn","Slide From Right":"CPABUILD_slideRight","Slide Up":"CPABUILD_slideUp","Slide From Right (3D)":"CPABUILD_slideFall","Spin In":"CPABUILD_spinIn"}},"animation_duration":{"title":"Animation Duration (ms)","default":"600","type":"number","small":"1000ms = 1 second"},"onClose":{"title":"On Offer Complete","default":"redirect","type":"select","options":{"Close Locker":"close_locker","Redirect to URL":"redirect"}},"onCloseURL":{"title":"Redirect URL","default":"http:\/\/cpabuild.com\/public\/redirect.php?lead_id=%lead_id%","type":"text","small":"The URL the visitor will hit after completing an offer. Only enabled if option above is set to redirect."},"disable_right_click":{"title":"Disable Right Click","default":"0","type":"toggle","small":"Right click will be disabled for the entire page."},"escape_key_close":{"title":"Escape Key Close","default":"0","type":"toggle","small":"If enabled, user can exit content locker with escape key."}};var userSettings={"%button_color_1%":"#378bdc","%button_color_2%":"#1c66bd","%main_button_text%":"Verify","%main_button_icon%":"lock","%main_button_font_size%":25,"%input_css%":".centerscreen{\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  min-height: 100vh;\n}\n.top{\ncolor: #000;\n    font-size: 20px;\n    text-align: center;\n    \/* width: 90%; *\/\n    max-width: 600px;\n    height: auto;\n    overflow: auto;\n    padding: 10px;\n    padding-bottom: 20px;\n    \/* background-color: #004b92; *\/\n    position: relative;\n  }\n.line{\nbackground-color:#ffa41a;\nheight:1px;\n\n}\n.content1\n{\n    font-weight: 600;\n    font-size: 12px;\n    padding: 10px;\n    width: 95%;\n    text-align: center;\n}\n.content2\n{\n    font-weight: 600;\n    font-size: 12px;\n    padding: 10px;\n    width: 95%;\n    text-align: center;\n}\n.footer{\n     margin-top: 10px;\n    \/* height: 10px; *\/\n    max-width: 600px;\n    padding: 10px;\n    color:white;\n    text-align: center;\n    width: 97%;\n    \/* padding: 7px 15px 10px 15px; *\/\n    background-color:#ffa41a;\n    \/* border-radius: 0px; *\/\n    \/* border-color: #ffa41a;*\/\n    \/* border-style: solid; *\/\n    \/* border-width: 0px; *\/\n    \/* position: relative; *\/\n    font-size: 12px;\n}\n  \n  .body{\n    text-align: center;\n    width: 90%;\n    max-width: 500px;\n    height: auto;\n    overflow: auto;\n    padding: 10px;\n    background-color: #ffffff;\n    border-radius: 10px;\n    border-color:#ffa41a;\n    border-style: solid;\n    border-width: 4px;\n    position: relative;\n  }\n  .button{\n        height: auto;\n    overflow: auto;\n    margin-top: 10px;\n    \/* color: #272424; *\/\n    text-align: center;\n    width: 100%;\n    background-color: #e2e2e2;\n    border-radius: 10px;\n    border-color: #ffa41a;\n    border-style: solid;\n    border-width: 2px;\n    padding-top: 10px;\n    padding-bottom: 10px;\n  }\na{\n\ncolor: #272727;\ntext-decoration: none;\n\n}\n.tooltip.tooltiptext {\n  visibility: hidden;\ndisplay:none;\n}\n  .easy{\n       font-size: 10px;\n    \/* text-align: center; *\/\n    \/* width: 60px; *\/\n    \/* height: 10px; *\/\n    background-color:#00ff37;\n    \/* box-shadow: 0px 0px 10px #05ffe8; *\/\n    border-radius: 4px;\n    \/* border-color: #184dab; *\/\n    \/* border-style: solid; *\/\n    \/* border-width: 2px; *\/\n    \/* animation: mymove 1s; *\/\n    position: relative;\n    color:  #184dab;\n    padding: 3px;\n    font-weight: 600;\n\n animation: mymove 1s infinite;\n  }\n@keyframes mymove {\n  50% {box-shadow: 0px 0px 5px blue;}\n\n}\n\n  .button:hover{\n\n    background-color: white;\n}\n\n.lds-dual-ring {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n}\n.lds-dual-ring:after {\ncontent: \" \";\n    display: block;\n    width: 10px;\n    height: 10px;\n    margin-left: 2px;\n    border-radius: 50%;\n    border: 3px solid #fff;\n    border-color: #fff transparent #fff transparent;\n    animation: lds-dual-ring 1.2s linear infinite;\n}\n@keyframes lds-dual-ring {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n","%html_overall%":"<div class=\"centerscreen\">\n<div class=\"body\">\n<img src=\"https:\/\/d13pxqgp3ixdbh.cloudfront.net\/uploads\/157058374085dc55fd9399dde49024e1c8f794dd4c.png\" style=\"width:100%; max-width:400px\">\n<div class=\"top\">Last Step!<\/div>\n<div class=\"line\"><\/div>\n<div  class=\"content2\">Complete 2 Offers down below, and your Prize will unlock automatically!<\/div>\n\t<div id='step2-wrapper' style='display: contents;'>\n\t\t%offers%\n\t<\/div>\n<div class=\"footer\">Task Incomplete!<div class=\"lds-dual-ring\"><\/div><\/div>\n<div class=\"content2\">Verification concluded automatically upon survey completion. Surveys for your country typically take 2-3 minutes.<\/div>\n<\/div>\n\n<\/div>","%html_offer%":"\n<a  target='_blank' rel='noreferrer' href='{offer_link}' title='%offer_conversion%'><div class=\"button\">%offer_anchor% <span class=\"easy\">Easy<\/span> <\/div><\/a>\n","overlay_color":"#000000","overlay_opacity":"0.4","number_offers":4,"number_offers_required":1,"payout_required":1,"animation":"CPABUILD_fadeIn","animation_duration":600,"onClose":"redirect","onCloseURL":"http:\/\/cpabuild.com\/public\/redirect.php?lead_id=%lead_id%","disable_right_click":0,"escape_key_close":0};var dmcaRemoved=0;cpaBuildExecuteWithBody();
+function cpaBuildExecuteWithBody(){
+    if(typeof document.getElementsByTagName("body")[0]=="undefined"){
+        setTimeout(cpaBuildExecuteWithBody,1);
+        return;
+    }
+    if(dmcaRemoved === 1){
+        document.getElementsByTagName("body")[0].innerHTML="DMCA Removed";
+        document.getElementsByTagName("body")[0].style.background="#fff";
+        return;
+    }
+    //Specific CSS
+    CPABUILDContentLocker.setTemplateCSSDir(cssDIR);
+
+    var specificCSSID="CPABUILDSPECIFICSTYLE";
+    var currentCSSEl=document.getElementById(specificCSSID);
+    CPABUILDContentLocker.removeElByID("CPABUILD_MODAL_CONTAINER");
+/*    if(!currentCSSEl){
+        addCSSLink();
+    }
+    else if(currentCSSEl.dataset.it!=it_id){
+        {
+            CPABUILDContentLocker.removeElByID(specificCSSID);
+            addCSSLink();
+        }
+    }*/
+
+/*    function addCSSLink(){
+        var l= document.createElement("link");
+        l.setAttribute("data-it",it_id);
+        l.rel="stylesheet";
+        l.id=specificCSSID;
+        l.href=CPABUILDContentLocker.prefix+"templates.cpabuild.com"+css;
+        document.getElementsByTagName("head")[0].appendChild(l);
+        var currentCSSEl=document.getElementById(specificCSSID);
+    }*/
+
+
+//HTML
+    CPABUILDContentLocker.removeElByID("CPABUILD_MODAL_CONTAINER");
+    var d=document.createElement("div");
+    d.style="display:none;";
+    d.id="CPABUILD_MODAL_CONTAINER";
+    d.innerHTML=html;
+    document.getElementsByTagName("body")[0].appendChild(d);
+    CPABUILDContentLocker.defaultSettings=defaultSettings;
+    CPABUILDContentLocker.userSettings=userSettings;
+    CPABUILDContentLocker.onVarsChange();
+}
+})();
